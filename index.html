@@ -1,13 +1,254 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dib</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <p>Hello! I'm Dib. Who are you?</p>
-    </body>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>I am Dib</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #000;
+    }
+    
+    .header {
+      color: #fff;
+      text-align: center;
+      padding: 128px;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse, black, transparent 78%);
+    }
+    
+    .header .logo {
+      height: 140px;
+      width: auto;
+    }
+    
+    .header h1 {
+      margin-top: 0;
+    }
+    
+    .fixed-Center {
+      margin: auto;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      position: fixed;
+      z-index: 99;
+      pointer-events: none;
+      background-color: rgba(0, 0, 0, 0.0);
+    }
+    
+    .header q {
+      text-decoration: 2px underline red;
+    }
+    
+    .header ul {
+      list-style-type: none;
+    }
+    
+    .header ul li {
+      display: inline-block;
+      pointer-events: auto;
+    }
+    
+    .header ul li svg {
+      fill: white;
+      border-radius: 4px;
+      height: 48px;
+      width: 48px;
+    }
+    
+    .header ul li svg:hover {
+      fill-opacity: 1;
+    }
+    
+    .instagram svg:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    
+    .facebook svg:hover {
+      background: #29487D;
+    }
+    
+    .email svg:hover {
+      background: #f8b622;
+    }
+    
+    .phone svg:hover {
+      background: #2d58c9;
+    }
+    
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    .column {
+      -ms-flex: 20%;
+      flex: 20%;
+      max-width: 20%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      width: 100%;
+      margin-top: 8px;
+      vertical-align: middle;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+      filter: gray;
+      -webkit-filter: grayscale(100%);
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+    }
+    
+    .column img:hover,
+    .column img.mouseover {
+      filter: none;
+      -webkit-filter: grayscale(0%);
+      opacity: 1;
+      filter: alpha(opacity=100)
+    }
+    
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header fixed-Center">
+    <img class="logo" src="images/logo.png" />
+    <h1>I am Dib</h1>
+    <q>A lazy cunt lives in Kathmandu, fueled by tea and smoke. Draws stuff sometimes.</q>
+    <p>Yeah, that pretty much sums me up.</p>
+
+    <ul>
+      <li>
+        <a class="instagram" href="https://instagram.com/iamdib" _target="blank" title="iamdib">
+          <svg viewBox="0 0 24 24">
+    <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+    />
+  </svg>
+        </a>
+      </li>
+      <li>
+        <a class="facebook" href="https://facebook.com/dibwho" _target="blank" title="dibwho">
+          <svg viewBox="0 0 24 24">
+    <path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z"
+    />
+  </svg>
+        </a>
+      </li>
+      <li>
+        <a class="email" href="mailto:hi@dibeshor.com.np" title="hi@dibeshor.com.np">
+          <svg viewBox="0 0 24 24">
+    <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+    />
+  </svg>
+        </a>
+      </li>
+      <li>
+        <a class="phone" href="call:+977 9843635789" title="+977 9843635789">
+          <svg viewBox="0 0 24 24">
+    <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
+    />
+  </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row"></div>
+
+  <script>
+    var images = [
+      '01.jpg', '03.jpg', '09.jpg', '26.jpg', '22.jpg', '24.jpg', '13.jpg',
+      '28.jpg', '11.jpg', '19.jpg', '13.jpg', '20.jpg', '29.jpg', '25.jpg',
+      '16.jpg', '05.jpg', '21.jpg', '30.jpg', '27.jpg', '10.jpg', '14.jpg',
+      '02.jpg', '17.jpg', '18.jpg', '08.jpg', '12.jpg', '13.jpg', '06.jpg',
+      '07.jpg', '15.jpg', '04.jpg', '23.jpg'
+    ]
+    var maxColumnChild = Math.round(images.length / 5)
+    var $row = $('.row')
+    var $column = getColumnDiv()
+
+    while (images.length) {
+      var i = Math.floor(Math.random() * images.length)
+
+      $column.innerHTML += '<img src="images/arts/' + images[i] + '" />'
+
+      images.splice(i, 1)
+
+      if ($column.children.length === maxColumnChild) {
+        $row.appendChild($column)
+        $column = getColumnDiv()
+      }
+    }
+
+    var $$imgs = $$('img')
+    var interval = 1000
+
+    setInterval(function() {
+      var index = Math.floor(Math.random() * $$imgs.length)
+      var $img = $$imgs[index]
+      var $mouseover = $('.mouseover')
+
+      if ($mouseover) $mouseover.classList.remove('mouseover')
+      while (!checkIfVisible($img)) {
+        index = Math.floor(Math.random() * $$imgs.length)
+        $img = $$imgs[index]
+      }
+
+      $img.classList.add('mouseover')
+      interval = Math.floor(Math.random() * 5000) + 2000
+    }, interval)
+
+    function $(selector) {
+      return document.querySelector(selector)
+    }
+
+    function $$(selector) {
+      return document.querySelectorAll(selector)
+    }
+
+    function checkIfVisible($elm) {
+      var rect = $elm.getBoundingClientRect();
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+    function getColumnDiv() {
+      var column = document.createElement('div')
+      column.classList = 'column'
+      return column
+    }
+  </script>
+</body>
+
 </html>
